@@ -8,6 +8,10 @@
 
     @media @mobile {
       flex-direction: column;
+
+      #tc {
+        width: 100%;
+      }
     }
 
    
@@ -53,6 +57,10 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .content-pick {
@@ -64,6 +72,23 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .makeButton();
+
+        @media @mobile {
+          width: 100%;
+        }
+      }
+
+      @media @mobile {
+        width: 75%;
+        margin: 0 auto 30px;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
     }
   }
 }// home

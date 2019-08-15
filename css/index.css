@@ -171,15 +171,6 @@ img {
 .yellowBus {
   margin: 1.5em 0;
 }
-.btn {
-  background-color: #17A2B8;
-  text-align: center;
-  line-height: 1.5;
-  font-size: 1.8rem;
-  border-radius: 8px;
-  width: 83%;
-  padding: 0.2em 0;
-}
 nav {
   display: flex;
   justify-content: space-around;
@@ -209,6 +200,9 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
+  }
+  .home .content-section #tc {
+    width: 100%;
   }
 }
 .home .content-section .text-content {
@@ -246,6 +240,11 @@ nav a {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -255,6 +254,31 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #17A2B8;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  width: 83%;
+  padding: 0.2em 0;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
 }
 header {
   display: flex;
