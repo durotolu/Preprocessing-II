@@ -1,1 +1,24 @@
 // Mixins in here
+
+.makeButton(@color: @button-bg, @position: center, @font: 1.8rem) {
+    background-color: @color;
+    text-align: @position;
+    line-height: 1.5;
+    font-size: @font;
+    border-radius: 8px;
+    width: 83%;
+    padding: 0.2em 0;
+}
+
+.makeButtonGlow (@anim: example) {
+    animation-name: @anim;
+    animation-duration: 2s;
+}
+
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
