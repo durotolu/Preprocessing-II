@@ -171,6 +171,15 @@ img {
 .yellowBus {
   margin: 1.5em 0;
 }
+.btn {
+  background-color: #17A2B8;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  width: 83%;
+  padding: 0.2em 0;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -241,4 +250,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+.welcome-section {
+  border-bottom: 2px dashed #C0C0C0;
 }
