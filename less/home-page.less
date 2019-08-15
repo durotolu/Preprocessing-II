@@ -1,5 +1,21 @@
 .home {
 
+  //header and welcome added
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  
+    @media @mobile {
+      flex-direction: column;
+
+    }
+  }
+  
+  .welcome-section {
+    border-bottom: 2px dashed @navigation-border;
+  }
+  //
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -92,14 +108,3 @@
     }
   }
 }// home
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.welcome-section {
-  border-bottom: 2px dashed @navigation-border;
-}
